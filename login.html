@@ -1,0 +1,575 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login</title>
+ 		
+<!--theme swiching-->	
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+	<script src="js/theme.js"></script>
+    	
+<!--pincode popup and validation -->	
+	<script src="js/pincode-validate.js"></script>
+	<script src="js/popup.js"></script>
+	<link rel="stylesheet" href="css/popup.css">
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<!-- Ionicons Font CSS-->
+    <link rel="stylesheet" href="css/ionicons.min.css">
+<!-- font awesome CSS-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    
+
+    
+
+    
+<!-- Meanmenu CSS (for mobile dropdown menus)-->
+    <link rel="stylesheet" href="css/meanmenu.min.css">
+
+    
+
+    
+<!--Nivo Slider CSS(for all sliders)-->
+    <link rel="stylesheet" href="css/nivo-slider.css">
+<!-- Owl Carousel CSS ( for display of featured products)-->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+
+    
+
+    
+
+
+
+    
+
+    
+</head>
+<body>
+
+                                 
+    <div class="wrapper home-5">
+        <!--Header Area Start-->
+        <header>
+
+           <div class="header-container">
+																							   
+
+	   
+
+
+               <!--Header Top Area Start--> 
+              <div class="header-top-area">
+                   <div class="container">
+                       <div class="row">
+ <!--Header Top Left Area Start-->
+                            <div class="col-md-3 col-sm-4 col-xs-12 hidden-xs">                               <div class="header-top-menu">
+                                   <ul>
+                                       <li>
+                                          <i class="fa fa-envelope-o"> projectp2intern@gmail.com | </i><i class="fa fa-phone"> +91-99999-99999 </i>
+										  
+                                       </li>
+
+                                   </ul>
+                               </div>
+							   
+                           </div>
+						    <div class="col-md-2 col-sm-9 col-xs-2 text-center">
+                               <div class="header-top-menu">
+                                   <ul>
+										<li>
+										                                           <button id="themetoggle" onclick="toggleTheme()">Switch Theme</button>
+ 
+                                       </li>
+
+                                   </ul>
+                               </div>
+							   
+                           </div>
+						   <div class="col-md-4 col-sm-9 col-xs-2 text-center">
+                               <div class="header-top-menu">
+                                   <ul>
+                                       <li>
+										                                            <button class="open-button" onclick="openForm()">Check Service Availability</button>
+
+                                       </li>
+
+
+                                   </ul>
+                               </div>
+							   
+                           </div>
+						     
+						 <div class="col-md-3 col-sm-8 hidden-xs text-center">
+                               <div class="header-top-menu">
+                                   <ul>
+                                       <li class="support"><span><a id="signup" href = "signup.html">Sign Up | </a><a id="login"href = "login.html">Login</a></span></li>
+                                      
+                                   </ul>
+                               </div>
+                           </div>   
+						   <!--Header Top Right Area End-->
+               <!--Header Top Area End-->
+               <!--Header Middel Area Start-->
+               <div class="header-middel-area">
+                   <div class="container">
+                       <div class="row">
+                           <!--Logo Start-->
+                           <div class="col-md-7 col-sm-9 col-xs-1">
+                               <div class="logo">
+                                   
+                                    
+
+                               </div>
+                           </div>
+						   
+                           <!--Logo End-->
+                      <div class="col-md-1 col-sm-9 col-xs-1 text-centre">
+                               <div class="form-popup" id="myForm">
+  <form action="" class="form-container">
+<input id="pincode" placeholder="Enter PINCODE"maxlength="6"> <br>
+										  <button type="button" class="btn" onclick="myFunction()">Submit</button>
+										  <button type="button" class="btn" onclick="closeForm()">Close</button>
+  </form>
+</div>
+                           </div>
+                           <!--Mini Cart Start-->
+                           <div class="col-md-3 col-sm-4 col-xs-8 text-right">
+                               <div class="mini-cart-area">
+                                   <ul>
+
+                                       <li>
+                                                                                  <a href="mycart.php"><i class="ion-android-cart"></i><span class="cart-total"> </a>
+                                                                               </li>
+                                   </ul>
+                               </div>
+                           </div>
+                           <!--Mini Cart End-->
+                       </div>
+                   </div>
+               </div>
+               <!--Header Middel Area End--><!--Header bottom Area Start-->
+               <div class="header-bottom-area header-sticky">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-md-12">
+                               
+<!--Main Menu Area Start-->
+                               <div class="main-menu-area">
+
+
+                                   <nav>
+                                       <ul class="main-menu">
+                                          <li id="home" ><a href="index.html">Home</a></li>
+                                        
+                                                                                                                                       
+											
+                                           <li><a href="store.php">Our Store</a></li>
+                                                         
+											   
+											   </li>
+                                                                                            
+                                            <li ><a href="about.html" >About Us</a></li>
+                                            <li><a href="near-by-attraction.html">Near By Attraction</a></li>
+                                          
+                                            
+    
+                                           <li><a href="contact.html">Contact us</a></li>
+										    <li><a href = #>Our Products<span class="caret"></span></a>
+                                               <ul class="dropdown">
+                                               <li><a href="category/category1.html">Category 1</a> </li>
+											    <li><a href="category/category2.html">Category 2</a> </li>
+											   <li><a href="category/category3.html">Category 3</a> </li>
+											   <li><a href="category/category4.html">Category 4</a> </li>
+											  
+											   </ul></li>                                 
+                                       </ul>
+                                   </nav>
+                               </div>
+<!--Main Menu Area End-->
+                           </div>
+                       </div>
+                   </div>
+               </div>
+<!--Header bottom Area End-->
+<!--Mobile Menu Area Start-->
+               <div class="mobile-menu-area hidden-sm hidden-md hidden-lg">
+                   <div class="container">
+                       <div class="row">
+                           <div class="col-xs-12">
+                               <div class="mobile-menu">
+                                                                      <nav>
+                                       <ul class="main-menu">
+                                          <li id="home"><a href="index.html">Home</a></li>
+                                          
+                                                      
+                                           <li><a href="store.php">Our Store</a></li>
+                                                                                                                                          
+											 
+											   
+											   </li>
+                                                                                            
+                                            <li ><a href="about.html" >About Us</a></li>
+                                            <li><a href="near-by-attraction.html">Near By Attraction</a></li>
+                                          
+                                            
+    
+                                           <li><a href="contact.html">Contact us</a></li>
+										   <li><a href = #>Our Products<span class="caret"></span></a>
+                                               <ul class="dropdown">
+                                               <li><a href="category/category1.html">Category 1</a> </li>
+											    <li><a href="category/category2.html">Category 2</a> </li>
+											   <li><a href="category/category3.html">Category 3</a> </li>
+											   <li><a href="category/category4.html">Category 4</a> </li>
+											  
+											   </ul></li>                                 
+                                       </ul>
+                                   </nav>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                </div>
+<!--Mobile Menu Area End--> 
+            </div> 
+        </header>
+<!--Header Area End-->
+ <section class="heading-banner-area pt-30">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="heading-banner">
+                            <div class="breadcrumbs">
+                                <ul>
+                                    <li>Home</a><span class="breadcome-separator">></span></li>
+                                    <li>Login</li>
+                                </ul>
+                            </div>
+                            <div class="heading-banner-title">
+                                <h1>Login</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+	<section class="contact-form-area mt-20">
+        <div class="container">
+            <div class="row">
+<!--Contact Form Start-->
+                <div class="col-md-7">
+                    <div class="contact-form-title">
+                        <h2></h2>
+                    </div>
+      <section>              
+<div class="contact-form">
+
+<div id = "frm">  
+      
+        <form name="f1" action = "php/authentication.php" onsubmit = "return validation()" method = "POST">  
+                <label> UserName: </label>  
+                <input type = "text" id ="user" name  = "user" />  
+                <label> Password: </label>  
+                <input type = "password" id ="pass" name  = "pass" />  
+                <input type =  "submit" id = "btn" value = "Login"class="submit-button" />  
+				
+            
+      <label type="text" name="forgot"  value=""  class="first-name">FORGOT PASSWORD<a href = "forgot.html"> Click Here</a></label>
+	            
+			
+        </form>  
+    </div>  
+</div>	
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</div>
+
+        
+	</section>
+<!--Contact Form End-->
+    
+<!--Modal Start-->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+<!-- Modal Content Strat-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-details">
+                    <div class="row">
+<!--Product Img Strat-->
+                        <div class="col-md-5 col-sm-5">
+<!--Product Tab Content Start-->
+                            <div class="tab-content">
+                                <div id="watch1" class="tab-pane fade in active">
+                                    <div class="modal-img img-full">
+                                        <img src="img/single-product/large/1.jpg" alt="">
+                                    </div>
+                                </div>
+                               
+                            </div>
+<!--Product Tab Content End-->
+                            
+                        </div>
+<!--Product Img End-->
+<!-- Product Content Start-->
+                        <div class="col-md-7 col-sm-7">
+                            <div class="product-info">
+                                <h2 class="title"></h2>
+                                <div class="product-price">
+                                    <span class="old-price"></span>
+                                    <span class="new-price"></span>
+                                </div>
+                                <a href="#" class="see-all">See all features</a>
+                                <div class="add-to-cart quantity">
+                                    <form class="add-quantity" method="POST" action="http://Project P2.com/cart/add">
+                                        <div class="quantity modal-quantity">
+                                            <label>Quantity</label>
+                                            <input type="number" name="quantity" value="1">
+                                            <input type="hidden" name="product" id="product">
+                                        </div>
+                                        <div class="add-to-link">
+                                            <button class="form-button" data-text="add to cart">add to cart</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="cart-description">
+                                    <p></p>
+                                </div>
+                                <div class="social-share">
+                                    <h3>Share this product</h3>
+                                    <ul class="socil-icon2">
+                                        <li><i class="fa fa-facebook"></i></a></li>
+                                        <li><i class="fa fa-twitter"></i></a></li>
+                                        <li><i class="fa fa-pinterest"></i></a></li>
+                                        <li><i class="fa fa-google-plus"></i></a></li>
+                                        <li><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+<!--Product Content End-->
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Modal Content Strat-->
+    </div>
+</div>
+<!--Modal End-->   
+<!--Footer Area Start-->
+        <footer>
+            <div class="footer-container bg-3">
+<!--Footer Top Area Start-->
+                <div class="footer-top-area ptb-50">
+                    <div class="container">
+                        <div class="row">
+<!--Single Footer Start-->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-footer">
+<!--Footer Logo Start-->
+                                    <div class="footer-logo">
+                                         
+                                    </div>
+<!--Footer Logo End-->
+<!--Footer Content Start-->
+                                    <div class="footer-content">
+                                        <p class="text-dark"><strong>Project P2</strong></p>
+                                        <div class="contact">
+                                            <p>Project By Team </p><br/>
+                                          
+                                        </div>
+                                    </div>
+                                         
+                                    </div>
+<!--Footer Content End-->
+                                </div>
+                         
+<!--Single Footer End-->
+<!--Single Footer Start-->
+                            <div class="col-md-2 col-sm-6">
+                                <div class="single-footer mt-30">
+                                    <div class="footer-title">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2 col-sm-6">
+                                <div class="single-footer mt-30">
+                                    <div class="footer-title">
+                                        <h3>information</h3>
+                                    </div>
+                                    <ul class="footer-info">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                      <li><a href="near-by-attraction.html">Near By Attraction</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                      
+                                       
+                                    </ul>
+                                </div>
+                            </div>
+<!--Single Footer End-->
+<!--Single Footer Start-->
+<!-- <div class="col-md-2 col-sm-6">
+                                <div class="single-footer mt-30">
+                                    <div class="footer-title">
+                                        <h3>My Account</h3>
+                                    </div>
+                                    <ul class="footer-info">
+                                        <li>My Account</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li>Shopping cart</a></li>
+                                        <li>Checkout</a></li>
+                                        <li>Portfolio</a></li>
+                                        <li>Frequently Questions</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                 <!--Single Footer End-->
+<!--Single Footer Start-->
+                            <div class="col-md-4 col-sm-6">
+                                <div class="single-footer mt-30">
+                                    <div class="footer-title">
+                                      <h3>ADDRESS</h3>
+                                    <p>Jaipur, Rajasthan<br/> India, Pin- 302033 </p>    
+                                     <p><label>Phone:</label> +91-99999-99999</p>
+                                    <p><label>Email:</label>projectp2intern@gmail.com</a></p>
+                                    </div>
+                                    
+                                                   </div>
+                            </div>
+<!--Single Footer End-->
+                        </div>
+                    </div>
+                </div>
+<!--Footer Top Area End-->
+<!--Footer Bottom Area Start-->
+                <div class="footer-bottom-area">
+                    <div class="container">
+                        <div class="row">
+                            <!--Footer Left Content Start-->
+                            <div class="col-md-6 col-sm-6">
+                                <div class="copyright-text ">
+
+
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-6" style="text-align: right;">
+                                <ul class="socil-icon">
+                                    <li><a href="" data-toggle="tooltip" title="Twitter"><i
+                                                class="fa fa-facebook"></i></a></li>
+                                    <li><a href="" data-toggle="tooltip" title="Facebook"><i
+                                                class="ion-social-facebook"></i></a></li>
+                                    <li><a href="" data-toggle="tooltip" title="Google Plus"><i
+                                                class="ion-social-googleplus"></i></a></li>
+                                    <li><a href="" data-toggle="tooltip" title="Youtube"><i
+                                                class="ion-social-youtube"></i></a></li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+                        <!--Footer Left Content End-->
+
+                        <!--Footer Right Content End-->
+                    </div>
+                </div>
+                    </div>
+              
+<!--Footer Bottom Area End-->
+            </div>
+        </footer>
+<!--Footer Area End-->
+
+
+<!--All Js Here-->
+    
+<!--Jquery 1.12.4(for basic jQuery for nivo slider and scroll up JS files)-->
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+     
+
+       
+
+           
+
+            
+
+           
+<!--Scroll Up(for back to top button)-->
+    <script src="js/jquery.scrollUp.min.js"></script>
+
+    
+<!-- Meanmenu JS (for mobile dropdown menus)-->
+    <script src="js/jquery.meanmenu.min.js"></script>
+
+     
+
+     
+           
+<!--Nivo Slider JS(for all sliders)-->
+    <script src="js/jquery.nivo.slider.js"></script>
+<!--Waypoints-->
+    <script src="js/waypoints.min.js"></script>
+<!-- Owl Carousel JS ( for display of featured products)-->
+    <script src="js/owl.carousel.min.js"></script>
+
+    
+
+    
+<!--Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+
+    
+<!--Main Js-->
+    <script src="js/main.js"></script><script type="text/javascript">
+    $(".productinfo").click(function(event) {
+        $("#myModal .title").text($(this).attr('data-name'));
+        $("#myModal #watch1 img").attr('src',$(this).attr('data-img'));
+        $("#myModal .see-all").attr('href',$(this).attr('data-url'));
+        $("#myModal .cart-description p").text($(this).attr('data-detail'));
+        $("#myModal #product").val($(this).attr('data-id'));
+        var discount= parseInt($(this).attr('data-discount'));
+        if (discount > 0) {
+            $("#myModal .product-price .old-price").text("Rs "+$(this).attr('data-oldprice')+"/-");
+            $("#myModal .product-price .new-price").text("Rs "+$(this).attr('data-newprice')+"/-");
+        }else{
+           $("#myModal .product-price .old-price").remove();
+           $("#myModal .product-price .new-price").text("Rs "+$(this).attr('data-newprice')+"/-");
+        }
+        $("#myModal").modal("show");
+    });
+</script>
+</body> 
+
+</html>
